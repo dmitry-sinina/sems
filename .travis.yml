@@ -8,7 +8,9 @@ addons:
       - cmake
       - build-essential
       - libssl-dev
-      - libpqxx3-dev
+      - libpqxx-dev
+      - libmp3lame-dev
+      - libopus-dev
       - libxml2-dev
       - libspandsp-dev
       - libsamplerate-dev

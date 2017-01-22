@@ -14,7 +14,7 @@ sems core is a part of project [Yeti]
 
 ### install build prerequisites
 ```sh
-# aptitude install git cmake build-essential libssl-dev libpqxx3-dev libxml2-dev libspandsp-dev libsamplerate-dev libcurl3-dev libhiredis-dev librtmp-dev libzrtpcpp-dev libev-dev python-dev libspeex-dev libgsm1-dev
+# aptitude install git cmake build-essential libssl-dev libxml2-dev libspandsp-dev libsamplerate-dev libcurl3-dev libhiredis-dev librtmp-dev libzrtpcpp-dev libev-dev python-dev libspeex-dev libgsm1-dev libpqxx-dev libmp3lame-dev libopus-dev
 ```
 
 ### get sources & build debian packages
