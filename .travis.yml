@@ -1,23 +1,25 @@
 language: cpp
 compiler:
   - gcc
-install:
-  - git
-  - cmake
-  - build-essential
-  - libssl-dev
-  - libpqxx3-dev
-  - libxml2-dev
-  - libspandsp-dev
-  - libsamplerate-dev
-  - libcurl3-dev
-  - libhiredis-dev
-  - librtmp-dev
-  - libzrtpcpp-dev
-  - libev-dev
-  - python-dev
-  - libspeex-dev
-  - libgsm1-dev
+addons:
+  apt:
+    packages:
+      - git
+      - cmake
+      - build-essential
+      - libssl-dev
+      - libpqxx3-dev
+      - libxml2-dev
+      - libspandsp-dev
+      - libsamplerate-dev
+      - libcurl3-dev
+      - libhiredis-dev
+      - librtmp-dev
+      - libzrtpcpp-dev
+      - libev-dev
+      - python-dev
+      - libspeex-dev
+      - libgsm1-dev
 
 script: "./package.sh"
 
