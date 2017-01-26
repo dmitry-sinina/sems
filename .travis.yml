@@ -1,27 +1,14 @@
-language: cpp
-compiler:
-  - gcc
-addons:
-  apt:
-    packages:
-      - git
-      - cmake
-      - build-essential
-      - libssl-dev
-      - libpqxx-dev
-      - libmp3lame-dev
-      - libopus-dev
-      - libxml2-dev
-      - libspandsp-dev
-      - libsamplerate-dev
-      - libcurl3-dev
-      - libhiredis-dev
-      - librtmp-dev
-      - libzrtpcpp-dev
-      - libev-dev
-      - python-dev
-      - libspeex-dev
-      - libgsm1-dev
+sudo: required
+language: generic
 
-script: "./package.sh"
+services:
+  - docker
+env:
+  - TRAVIS_DEBIAN_DISTRIBUTION=jessie
 
+script:
+  - sh script.sh
+
+branches:
+  except:
+    - /^debian\/\d/
